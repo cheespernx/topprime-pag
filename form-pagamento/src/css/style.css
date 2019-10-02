@@ -1,0 +1,12 @@
+.container {
+  margin-top: 20px;
+}
+
+.sidebar-step{
+  background-color: #F5C71A;
+  color: #252525;
+  padding: 20px;
+  margin: 5px;
+  height: fit-content;
+  min-height: 150px;
+}

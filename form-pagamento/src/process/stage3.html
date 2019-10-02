@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/src/js/main.js"></script>
+    <link rel="stylesheet" href="/src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Dados de Dependentes</title>
+  </head>
+  <body>
+    <div class="form-group col-md-12">
+      <label for="btn">Você possui dependentes?</label>
+      <div class="btn-group" id="btn-grp" role="group" aria-label="Basic example">
+        <button type="button" id="btn-sim" class="btn btn-secondary" onclick="Mudarestado1(dadosDep)">Sim</button>
+        <button type="button" id="btn" class="btn btn-secondary" onclick="Mudarestado2(dadosDep)">Não</button>
+      </div>
+    </div>
+
+    <div class="form-group col-md-12" id="dadosDep" hidden>
+        <h3>Dados dos Dependentes</h3>
+        <h6>Dependente 1</h6>
+        <div class="form-group col-md-4"> <!-- Nome -->
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Nome">
+          <small>Precisa ser o seu nome completo, ok?</small>
+        </div>
+
+        <div class="form-group col-md-4"> <!-- CPF -->
+          <input type="text" class="form-control" id="CPF" placeholder="CPF" data-mask="000.000.000-00" data-mask-selectonfocus="true">
+          <small>Apenas números.</small>
+        </div>
+
+        <div class="form-group col-md-4">  <!-- Data de Nascimento -->
+          <input type="text" class="form-control" id="data-nasc" placeholder="Data de Nascimento" data-mask="00/00/0000" data-mask-selectonfocus="true"/>
+          <small>Mais uma vez, apenas números, no formato: "01/02/1990".</small>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="/src/js/bootstrap.min.js"></script>
+    <script src="/src/plugins/mask-field/jquery.mask.min.js"></script>
+
+  </body>
+</html>
